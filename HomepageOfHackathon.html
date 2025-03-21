@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon Slayer Hackathon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="loading-screen">
+    <div class="loading-video-container">
+      
+      <video class="loading-video" autoplay muted loop>
+        <source src="images/tanjiro laugh.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <h2 class="loading-text">Total Concentration Breathing</h2>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+  </div>
+  
+  <!-- Particles Background -->
+  <div class="particles" id="particles"></div>
+  
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">🔥 Demon Slayer Hackathon</div>
+    <div class="nav-links">
+      <a href="#home" class="nav-link">Home 🔥</a>
+      <a href="#roadmap" class="nav-link">Roadmap 🗺️</a>
+      <a href="#challenges" class="nav-link">Themes 🗡️</a>
+      <a href="#prizes" class="nav-link">Prizes 💰</a>
+      <a href="#register" class="nav-link">Register 📜</a>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+        <h2>Hackathon@SGU</h2>
+        <h3>2025</h3>
+        <p>Experience the thrill of a 24-hour coding marathon. Tech enthusiasts, developers, and problem solvers come together to build innovative solutions. This is your chance to showcase your coding skills, collaborate with like-minded individuals, and win exciting prizes!</p>
+        <a href="#" class="join-button">Sponser Us</a>
+        <a href="#" class="secondary-button">
+            <span>Dream & Believe</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+    <div class="hero-image">
+        <img src="images/roadmapnew.jpg" alt="Event Image">
+    </div>
+</section>
+
+
+
+
+<!-- Roadmap Section -->
+<section class="roadmap" id="roadmap">
+    <h2 class="section-title">Path to Victory</h2>
+    
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="quarter-badge">1</div>
+        <div class="timeline-content">
+          <div class="timeline-date">15th March</div>
+          <div class="timeline-title">Registration Open</div>
+          <div class="timeline-description">Teams can register for the hackathon and start preparing their breathing techniques.</div>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="quarter-badge">2</div>
+        <div class="timeline-content">
+          <div class="timeline-date">2nd April</div>
+          <div class="timeline-title">Registration Close</div>
+          <div class="timeline-description">Last day to form your squad and register for the epic coding battle ahead.</div>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="quarter-badge">3</div>
+        <div class="timeline-content">
+          <div class="timeline-date">5th April</div>
+          <div class="timeline-title">PPT Submission</div>
+          <div class="timeline-description">Submit your project presentation and initial concepts for review by our Hashira.</div>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="quarter-badge">4</div>
+        <div class="timeline-content">
+          <div class="timeline-date">7th April</div>
+          <div class="timeline-title">Judging & Shortlisting</div>
+          <div class="timeline-description">Our panel of tech Hashira will evaluate submissions and select the finalists.</div>
+        </div>
+      </div>
+  
+      <div class="timeline-item">
+        <div class="quarter-badge">5</div>
+        <div class="timeline-content">
+          <div class="timeline-date">11th April</div>
+          <div class="timeline-title">Hackathon Kickoff</div>
+          <div class="timeline-description">The battle begins! 24-hour coding marathon to defeat the demons of bugs and errors.</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="final-flag">
+      <div class="flag-content">
+        <div class="flag-title">Victory Awaits</div>
+        <div class="flag-subtitle">April 2025</div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Countdown Section -->
+  <section class="countdown" id="countdown">
+    <h2>BATTLE BEGINS IN</h2>
+    <div class="timer">
+      <div class="timer-item">
+        <div class="timer-value" id="days">24</div>
+        <div class="timer-label">DAYS</div>
+      </div>
+      <div class="timer-item">
+        <div class="timer-value" id="hours">12</div>
+        <div class="timer-label">HOURS</div>
+      </div>
+      <div class="timer-item">
+        <div class="timer-value" id="minutes">45</div>
+        <div class="timer-label">MINUTES</div>
+      </div>
+      <div class="timer-item">
+        <div class="timer-value" id="seconds">30</div>
+        <div class="timer-label">SECONDS</div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Challenges Section -->
+<section class="challenges" id="challenges">
+    <h2 class="section-title">Defeat the Bug Demons!</h2>
+    <div class="challenge-cards">
+      <div class="card">
+        <div class="card-img">
+          
+          <video class="card-video" autoplay muted loop>
+            <source src="images/water.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Water Breathing: Healthcare, Assistive Tech & Medical Computer Vision</h3>
+          <p class="card-text">Smart Wearable for Elderly – A device that tracks health vitals and alerts family members.</p>
+          <p class="card-text">AI-Powered Sign Language Interpreter – Converts gestures into text/speech.</p>
+          <p class="card-text">Affordable Telemedicine Platform – A low-cost virtual consultation system for remote areas</p>
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          
+          <video class="card-video" autoplay muted loop>
+            <source src="images/Thunderr (2).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Thunder Breathing: Environment & Sustainability</h3>
+          <p class="card-text">Smart Water Management System – Detects leaks and optimizes water usage in cities.</p>
+          <p class="card-text">AI-Based Waste Segregation System – Classifies waste into biodegradable, plastic, and electronic waste.</p>
+          <p class="card-text">Carbon Footprint Tracker – An app that calculates and reduces users' carbon impact</p>
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          
+          <video class="card-video" autoplay muted loop>
+            <source src="images/rengoku.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Flame Breathing: Smart Cities & Automation</h3>
+          <p class="card-text">Smart Traffic Management System – AI that adjusts traffic signals based on congestion.</p>
+          <p class="card-text">Intelligent Street Lighting – Solar-powered lights that adjust brightness based on movement.</p>
+          <p class="card-text">Automated Emergency Response System – Alerts nearest ambulance and police in case of accidents.</p>
+          <button class="btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Mentors Section -->
+  <section class="mentors" id="mentors">
+    <h2 class="section-title">Hashira of Coding!</h2>
+    <div class="mentor-cards">
+      <div class="mentor-card">
+        <div class="mentor-img">
+          <!-- Placeholder for mentor (jo bhi honge vhi samjha jao) image -->
+        </div>
+        <h3 class="mentor-name">Tomioka</h3>
+        <div class="mentor-role">Water Breathing Master (Frontend)</div>
+        <p>Expert in creating fluid UI/UX with CSS animations and responsive design patterns.</p>
+      </div>
+      <div class="mentor-card">
+        <div class="mentor-img">
+          <!-- Placeholder for mentor (jo bhi honge vhi samjha jao) image -->
+        </div>
+        <h3 class="mentor-name">Rengoku</h3>
+        <div class="mentor-role">Flame Breathing Master (Backend)</div>
+        <p>Specialized in high-performance server architecture and database optimization.</p>
+      </div>
+      <div class="mentor-card">
+        <div class="mentor-img">
+          <!-- Placeholder for mentor(jo bhi honge vhi samjha jao) image -->
+        </div>
+        <h3 class="mentor-name">Shinobu</h3>
+        <div class="mentor-role">Insect Breathing Master (Security)</div>
+        <p>Expert in finding and eliminating code vulnerabilities and implementing robust security measures.</p>
+      </div>
+      <div class="mentor-card">
+        <div class="mentor-img">
+          <!-- Placeholder for mentor(jo bhi honge vhi samjha jao) image -->
+        </div>
+        <h3 class="mentor-name">Zenitsu</h3>
+        <div class="mentor-role">Thunder Breathing Master (DevOps)</div>
+        <p>Specialized in CI/CD pipelines and lightning-fast deployment strategies.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section class="faq" id="faq">
+    <h2 class="section-title">Secrets of the Demon Slayers</h2>
+    <div class="faq-item">
+      <div class="faq-question">What breathing technique should I know?</div>
+      <div class="faq-answer">All participants should have basic knowledge of HTML, CSS, and JavaScript. Advanced frameworks like React, Vue, or Angular are recommended but not required. Just like Tanjiro, your determination matters more than experience!</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How many slayers can form a squad?</div>
+      <div class="faq-answer">Teams can consist of 1-4 members. Solo slayers are welcome, but remember that teamwork makes dream work!</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What rewards await the victorious?</div>
+      <div class="faq-answer">The top teams will receive exclusive Demon Slayer merchandise, cash prizes, and opportunities to join elite tech companies. The ultimate champion will be awarded the prestigious Nichirin Blade Trophy!</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How will demons (bugs) be judged?</div>
+      <div class="faq-answer">Projects will be evaluated based on creativity, technical difficulty, user experience, and adherence to the theme. Our panel of Hashira (industry experts) will provide fair judgment.</div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="footer-quote">"Only those who struggle, grow! Set your heart ablaze and code with all your might!"</div>
+    <div class="social-links">
+      <a href="#" class="social-link">FB</a>
+      <a href="#" class="social-link">TW</a>
+      <a href="#" class="social-link">IG</a>
+      <a href="#" class="social-link">GH</a>
+    </div>
+    <div class="copyright">© 2025 Demon Slayer Hackathon. All rights reserved.</div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
